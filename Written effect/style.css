@@ -1,0 +1,28 @@
+body{
+    background-color: red;
+    display: flex;
+    height: 100vh;
+    border: 3px solid;
+    justify-content: center;
+    align-items: center;
+
+}
+div{
+    display: inline-block;
+    
+}
+p{ width: 100%;
+    border-right: 3px solid;
+    overflow: hidden;
+    white-space: nowrap ;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   animation: blink 1s step-end infinite alternate,typeing 3s infinite;
+   ;
+}
+@keyframes blink {
+    50%{border-color: transparent;}
+}
+@keyframes typeing {
+    from{width: 0;}
+}

@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #main{
+display: flex;
+margin: 10px;
+
+        }
+        
+      
+        .text{
+            color: red;
+            margin: 13px;
+            position: relative;
+        }
+        .text::before{
+            position: absolute;
+           content: "";
+           width: 0%;
+           height: 1px;
+           background-color: red;
+           color: red;
+           transition: all 1s ease-in-out;
+        }
+        .text:hover::before{
+            width: 100%;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="text">hel</div>
+        <div class="text">del</div>
+        <div class="text">cel</div>
+    </div>
+    <div id="main">
+       <span class="text">hello</span>
+       <span class="text">hello</span>
+       <span class="text">hello</span>
+    </div>
+    
+</body>
+</html>
