@@ -4,14 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+       
         #main{
 display: flex;
 margin: 10px;
+justify-content: center;
+align-items: center;
 
         }
         
@@ -24,6 +22,7 @@ margin: 10px;
         .text::before{
             position: absolute;
            content: "";
+           bottom: -5px;
            width: 0%;
            height: 1px;
            background-color: red;
@@ -38,14 +37,8 @@ margin: 10px;
     </style>
 </head>
 <body>
+    
     <div id="main">
-        <div class="text">hel</div>
-        <div class="text">del</div>
-        <div class="text">cel</div>
-    </div>
-    <div id="main">
-       <span class="text">hello</span>
-       <span class="text">hello</span>
        <span class="text">hello</span>
     </div>
     
